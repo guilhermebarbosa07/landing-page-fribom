@@ -1,0 +1,1 @@
+/* Este ficheiro JavaScript está pronto para ser usado para adicionar novas funcionalidades no futuro. */
