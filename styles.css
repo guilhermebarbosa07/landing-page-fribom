@@ -293,9 +293,6 @@ ul {
     min-height: 60px; /* Garante que os cards tenham a mesma altura */
 }
 
-/* ====================================================== */
-/* ====== Adicione as regras acima no seu CSS =========== */
-/* ====================================================== */
 
 
 /* Documentação: Responsividade */
@@ -437,3 +434,72 @@ ul {
     }
 }
 
+/* Estilos para o Botão do Menu Hambúrguer */
+.menu-hamburguer {
+    display: none; /* Escondido em telas grandes */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.menu-hamburguer:hover {
+    color: #ffd700;
+}
+
+/* Ajustes na seção de Responsividade */
+@media (max-width: 992px) {
+    .navegacao {
+        flex-direction: row; /* Mantém logo e ícone na mesma linha */
+        justify-content: space-between;
+    }
+
+    .menu-hamburguer {
+        display: block; /* Mostra o botão em telas menores */
+    }
+
+    .menu {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 80px; /* Altura do header */
+        left: 0;
+        text-align: center;
+        gap: 0;
+    }
+
+    .menu.ativo {
+        display: flex; /* Mostra o menu quando a classe 'ativo' for adicionada */
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        display: block;
+        border-bottom: 1px solid #333;
+    }
+
+    .secao-inicio h2 {
+        font-size: 2.8rem;
+    }
+
+    .secao-inicio p {
+        font-size: 1.2rem;
+    }
+
+    .galeria-catalogo, .info-contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-catalogo, .info-horario, .info-local, .info-telefones {
+        width: 90%;
+        max-width: 400px;
+    }
+}

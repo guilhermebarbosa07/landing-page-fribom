@@ -22,7 +22,10 @@
             <a href="#inicio" class="logo">
                 <img src="/img/logo_fribom.png" alt="Logotipo FRIBOM - Casa de Carnes e Conveniência">
             </a>
-            <ul class="menu">
+            <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu" id="menu">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#catalogo">Catálogo</a></li>
@@ -97,7 +100,8 @@
                     </div>
 
                     <div class="card-catalogo fade-in">
-                        <img src="img/linguica_toscana_sadia_173_1_bfc327fda8f8702b33edf88a792d3200.webp" alt="Linguiça Toscana">
+                        <img src="img/linguica_toscana_sadia_173_1_bfc327fda8f8702b33edf88a792d3200.webp"
+                            alt="Linguiça Toscana">
                         <h3>Linguiça Toscana</h3>
                         <p>Feita com carne de porco selecionada e temperos especiais. Indispensável em qualquer bom
                             churrasco.</p>
@@ -112,8 +116,8 @@
                     Na FRIBOM, você encontra os melhores cortes e as ofertas mais frescas da semana. Qualidade e sabor
                     garantidos para sua mesa!
                 </p>
-                </div>
-                
+            </div>
+
         </section>
 
         <section id="contato" class="secao">
@@ -131,8 +135,13 @@
                         <p>Próximo ao colégio João Mont</p>
                     </div>
                     <div class="info-telefones fade-in">
-                        <h3><i class="fas fa-phone"></i>Telefone</h3>
-                        <p><a href="tel:+5565999968398"><i class="fas fa-phone"></i> (65) 99996-8398</a></p>
+                        <h3><i class="fab fa-whatsapp"></i>WhatsApp</h3>
+                        <p>
+                            <a href="https://wa.me/5565996318307"  rel="noopener noreferrer"
+                                class="link-whatsapp">
+                                <i></i> (65) 996318307
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -141,6 +150,17 @@
 
     <footer class="rodape">
         <p>&copy; 2025 FRIBOM. Todos os direitos reservados.</p>
+
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com/fribomcasadecarneseconvencias/" target="_blank" rel="noopener noreferrer"
+                aria-label="Link para o Facebook da FRIBOM">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fribom_casadecarnes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank" rel="noopener noreferrer" aria-label="Link para o Instagram da FRIBOM">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="app.js"></script>
